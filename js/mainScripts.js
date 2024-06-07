@@ -92,3 +92,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function toggleDetails(element) {
+    const details = element.nextElementSibling;
+    const allDetails = document.querySelectorAll('.details');
+
+    if (allDetails) {
+        allDetails.forEach(detail => {
+            if (detail !== details) {
+                detail.classList.remove('show');
+            }
+        });
+
+        details.classList.toggle('show');
+    }
+}

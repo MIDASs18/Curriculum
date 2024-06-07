@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="js\mainScripts.js" defer></script>
     <link id="id-favicon" rel="icon" href="img\favicon\favicon.jpg" type="image/x-icon">
     <link rel="stylesheet"
@@ -114,66 +114,64 @@
 
         <section id="educacion" class="education">
             <h2>Educación</h2>
-            <div id = "div-LaSalle">
-                <h3>Colegio Institución La Salle</h3>
-                <h5>Septiembre 2019 - Junio 2021</h5>
-                <p>Formación Profesional de Grado Medio, Sistemas Microinformáticos y Redes</p>
-                <dl>
-                    <dt><b>Aptituldes adquitidas:</b></dt>
-                    <dd>Diagnósticos de hardware</dd>
-                    <dd>Instalación de software</dd>
-                    <dd>Seguridad de la información</dd>
-                    <dd>Diseño web</dd>
-                    <dd>Resolución de problemas de hardware informático</dd>
-                    <dd>Linux</dd>
-                </dl>
+            <div id = "div-info" class="education-item">
+                <div class="summary" onclick="toggleDetails(this)">
+                    <h3>Colegio Institución La Salle</h3>
+                    <h5>Septiembre 2019 - Junio 2021</h5>
+                    <p>Formación Profesional de Grado Medio, Sistemas Microinformáticos y Redes</p>
+                </div>
+                <div class="details">
+                    <dl>
+                        <dt><b>Aptitudes adquiridas:</b></dt>
+                        <dd>Diagnósticos de hardware</dd>
+                        <dd>Instalación de software</dd>
+                        <dd>Seguridad de la información</dd>
+                        <dd>Diseño web</dd>
+                        <dd>Resolución de problemas de hardware informático</dd>
+                        <dd>Linux</dd>
+                    </dl>
+                </div>
             </div>
-            <div id = "div-LaSalle-info">
-                <h3>Colegio Institución La Salle</h3>
-                <h5>Septiembre 2019 - Junio 2021</h5>
-                <p>Formación Profesional de Grado Medio, Sistemas Microinformáticos y Redes</p>
-                <dl>
-                    <dt><b>Aptituldes adquitidas:</b></dt>
-                    <dd>Diagnósticos de hardware</dd>
-                    <dd>Instalación de software</dd>
-                    <dd>Seguridad de la información</dd>
-                    <dd>Diseño web</dd>
-                    <dd>Resolución de problemas de hardware informático</dd>
-                    <dd>Linux</dd>
-                </dl>
+            <div id = "div-info" class="education-item">
+                <div class="summary" onclick="toggleDetails(this)">
+                    <h3>IES Gaspar Melchor de Jovellanos</h3>
+                    <h5>Septiembre. 2021 - Junio 2023</h5>
+                    <p>Formación Profesional de Grado Superior, Desarrollo de Aplicaciones Multiplataforma </p>
+                </div>
+                <div class="details">
+                    <dl>
+                        <dt><b>Aptituldes adquitidas:</b></dt>
+                        <dd>Java</dd>
+                        <dd>HTML5</dd>
+                        <dd>Linux</dd>
+                        <dd>Python</dd>
+                        <dd>Android Studio</dd>
+                        <dd>Trabajo en equipo</dd>
+                        <dd>Diseño de bases de datos</dd>
+                        <dd>Administración de bases de datos</dd>
+                    </dl>
+                </div>
             </div>
-            <div>
-                <h3>IES Gaspar Melchor de Jovellanos</h3>
-                <h5>Septiembre. 2021 - Junio 2023</h5>
-                <p>Formación Profesional de Grado Superior, Desarrollo de Aplicaciones Multiplataforma </p>
-                <dl>
-                    <dt><b>Aptituldes adquitidas:</b></dt>
-                    <dd>Java</dd>
-                    <dd>HTML5</dd>
-                    <dd>Linux</dd>
-                    <dd>Python</dd>
-                    <dd>Android Studio</dd>
-                    <dd>Trabajo en equipo</dd>
-                    <dd>Diseño de bases de datos</dd>
-                    <dd>Administración de bases de datos</dd>
-                </dl>
-            </div>
-            <div>
-                <h3>CCC Centro de Estudios Profesionales</h3>
-                <h5>Octubre 2023 - Junio 2024</h5>
-                <p>Máster FP en Inteligencia Artificial y Big Data</p>
-                <dl>
-                    <dt><b>Aptituldes adquitidas:</b></dt>
-                    <dd> Linux</dd>
-                    <dd>Python</dd>
-                    <dd>Power Bi</dd>
-                    <dd>Data Mining</dd>
-                    <dd>Data Science</dd>
-                    <dd>Deep Learning</dd>
-                    <dd>Machine Learning</dd>
-                    <dd>Modelos Inteligencia Artificial</dd>
-                    <dd>Estadística para el Análisis de Datos</dd>
-                </dl>
+            <div id = "div-info" class="education-item">
+                <div class="summary" onclick="toggleDetails(this)">
+                    <h3>CCC Centro de Estudios Profesionales</h3>
+                    <h5>Octubre 2023 - Junio 2024</h5>
+                    <p>Máster FP en Inteligencia Artificial y Big Data</p>
+                </div>
+                <div class="details">
+                    <dl>
+                        <dt><b>Aptituldes adquitidas:</b></dt>
+                        <dd> Linux</dd>
+                        <dd>Python</dd>
+                        <dd>Power Bi</dd>
+                        <dd>Data Mining</dd>
+                        <dd>Data Science</dd>
+                        <dd>Deep Learning</dd>
+                        <dd>Machine Learning</dd>
+                        <dd>Modelos Inteligencia Artificial</dd>
+                        <dd>Estadística para el Análisis de Datos</dd>
+                    </dl>
+                </div>
             </div>
         </section>
 
@@ -181,55 +179,67 @@
             <h2>Experiencia Laboral</h2>
             <div>
                 <h3>Fontventa, S.L.</h3>
-                <div>
-                    <h4>Técnico informático (Prácticas)</h4>
-                    <h5>Marzo 2021 - Junio 2021 · 4 meses, Presencial</h5>
-                    <dl>
-                        <dt><b>Aptitudes adquitidas:</b></dt>
-                        <dd>Soporte técnico</dd>
-                        <dd>Trato con clientes</dd>
-                        <dd>Servicio de asistencia técnica</dd>
-                        <dd>Reparación de equipos informáticos</dd>
-                    </dl>
+                <div id = "div-info" class="experience-item">
+                    <div class="summary" onclick="toggleDetails(this)">
+                        <h4>Técnico informático (Prácticas)</h4>
+                        <h5>Marzo 2021 - Junio 2021 · 4 meses, Presencial</h5>
+                    </div>
+                    <div class="details">
+                        <dl>
+                            <dt><b>Aptitudes adquitidas:</b></dt>
+                            <dd>Soporte técnico</dd>
+                            <dd>Trato con clientes</dd>
+                            <dd>Servicio de asistencia técnica</dd>
+                            <dd>Reparación de equipos informáticos</dd>
+                        </dl>
+                    </div>
                 </div>
                 <div>
                     <h4>Desarrollador de software (Prácticas)</h4>
                     <h5>Abril 2023 - Junio 2023 · 3 meses, Presencial</h5>
                 </div>
-                <div>
-                    <h4>Desarrollador de software </h4>
-                    <h5>Julio 2023 - Noviembre 2023 · 5 meses, Jornada completa, Presencial</h5>
-                    <dl>
-                        <dt><b>Aptitudes adquitidas:</b></dt>
-                        <dd>HTML5</dd>
-                        <dd>Linux</dd>
-                        <dd>jQuery</dd>
-                        <dd>ASP.NET</dd>
-                        <dd>JavaScript</dd>
-                        <dd>TypeScript</dd>
-                        <dd>Diseño web</dd>
-                        <dd>Comunicación</dd>
-                        <dd>.NET Framework</dd>
-                        <dd>Soporte técnico</dd>
-                        <dd>Trato con clientes</dd>
-                        <dd>Capacidad de análisis</dd>
-                        <dd>Diseño de bases de datos</dd>
-                        <dd>Administración de bases de datos</dd>
-                    </dl>
+                <div id = "div-info" class="experience-item">
+                    <div class="summary" onclick="toggleDetails(this)">
+                        <h4>Desarrollador de software </h4>
+                        <h5>Julio 2023 - Noviembre 2023 · 5 meses, Jornada completa, Presencial</h5>
+                    </div>
+                    <div class="details">
+                        <dl>
+                            <dt><b>Aptitudes adquitidas:</b></dt>
+                            <dd>HTML5</dd>
+                            <dd>Linux</dd>
+                            <dd>jQuery</dd>
+                            <dd>ASP.NET</dd>
+                            <dd>JavaScript</dd>
+                            <dd>TypeScript</dd>
+                            <dd>Diseño web</dd>
+                            <dd>Comunicación</dd>
+                            <dd>.NET Framework</dd>
+                            <dd>Soporte técnico</dd>
+                            <dd>Trato con clientes</dd>
+                            <dd>Capacidad de análisis</dd>
+                            <dd>Diseño de bases de datos</dd>
+                            <dd>Administración de bases de datos</dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h3>Terza Generazione SRL (Erasmus+)</h3>
-                <h4>Técnico informático</h4>
-                <h5>Junio 2021 - Septiembre 2021 · 4 meses, Barcellona Pozzo di Gotto ME, Italia, Presencial</h5>
-                <dl>
-                    <dt><b>Aptitudes adquitidas:</b></dt>
-                    <dd>Lenguas extranjeras</dd>
-                    <dd>Servicios de internet</dd>
-                    <dd>Aprendizaje de idiomas</dd>
-                    <dd>Asistencia para hardware</dd>
-                    <dd>Reparación de equipos informáticos</dd>
-                </dl>
+            <div id = "div-info" class="experience-item">
+                <div class="summary" onclick="toggleDetails(this)">
+                    <h3>Terza Generazione SRL (Erasmus+)</h3>
+                    <h4>Técnico informático</h4>
+                    <h5>Junio 2021 - Septiembre 2021 · 4 meses, Barcellona Pozzo di Gotto ME, Italia, Presencial</h5>
+                </div>
+                <div class="details">
+                    <dl>
+                        <dt><b>Aptitudes adquitidas:</b></dt>
+                        <dd>Lenguas extranjeras</dd>
+                        <dd>Servicios de internet</dd>
+                        <dd>Aprendizaje de idiomas</dd>
+                        <dd>Asistencia para hardware</dd>
+                        <dd>Reparación de equipos informáticos</dd>
+                    </dl>
+                </div>
             </div>
         </section>
 

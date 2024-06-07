@@ -1,0 +1,310 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* Esto asegura que el padding y border estén incluidos en el ancho especificado */
+}
+
+header,
+footer {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+
+header h1,
+footer p {
+    margin: 0;
+}
+
+.menu {
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* Agrega una transición al transform */
+}
+
+.menu-toggle.active {
+    transform: rotate(180deg);
+    /* Rotación del icono cuando el menú está abierto */
+}
+
+.menu-links {
+    display: none;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.menu-links a {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+
+.espacio-menu {
+    margin-right: 4em;
+}
+
+.menu-links a:hover {
+    background-color: #58abfd;
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    /* Alinea el contenedor principal al centro horizontalmente */
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    /* Ancho máximo similar al de un folio */
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Opcional: sombra para destacar el contenido */
+}
+
+.tarjeta {
+    display: flex;
+    margin: 10px 0px 20px 0px;
+}
+
+.div-foto {
+    width: 30%;
+    /* Ajusta el ancho de la foto según sea necesario */
+    margin-right: 10px;
+    /* Espacio entre la foto y la información */
+}
+
+.fotoCarnet {
+    width: 90%;
+    /* Ajusta el tamaño de la foto */
+    border-radius: 8px;
+    /* Añade bordes redondeados a la foto si deseas */
+}
+
+.informacion {
+    flex-grow: 1;
+    /* La información ocupa el resto del espacio disponible */
+}
+
+.informacion table {
+    width: 100%;
+    /* La tabla ocupa todo el espacio disponible */
+}
+
+.informacion table td {
+    padding: 2px;
+    /* Añade espaciado interno a las celdas de la tabla */
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs {
+    display: inline-block;
+}
+
+.tab-btn {
+    background: linear-gradient(to right, #d2e8fc, #69b2fb); /* Define el degradado con los dos colores */
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background 4s ease; /* Agrega una transición suave al cambio de color */
+}
+
+.tab-btn:hover {
+    background: linear-gradient(to right, #69b2fb, #d2e8fc); /* Cambia el degradado al pasar el ratón */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content {
+    max-width: 650px; /* Ajusta el ancho máximo del contenido según tu preferencia */
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido es demasiado largo */
+    display: none;
+}
+
+.tab-content p {
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
+
+.tab-content img {
+    max-width: 100%; /* La imagen no debe superar el ancho del contenedor */
+    height: auto; /* Permite que la imagen conserve su proporción */
+}
+
+@media (max-width: 800px) {
+    .tarjeta {
+        flex-direction: column;
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+        margin: 10px 0 20px 0;
+    }
+
+    .div-foto {
+        width: 50%;
+        /* Mayor tamaño en pantallas pequeñas para mejor visualización */
+    }
+
+    .informacion {
+        width: 100%;
+        /* Utiliza todo el ancho disponible */
+    }
+
+    .espacio-menu {
+        margin-right: 2em;
+    }
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #555;
+}
+
+.linea {
+    border-top: 1px solid #ccc;
+    /* Color y estilo de la línea */
+    margin: 10px 0;
+    /* Margen superior e inferior */
+}
+
+span {
+    margin-right: 1em;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' -25,
+        'opsz' 20
+}
+
+.copy-icon,
+.copy-icon-in {
+    cursor: pointer;
+    color: #007bff;
+    /* Color del icono */
+    transition: color 0.3s ease;
+    /* Transición suave de color */
+}
+
+.copy-icon:hover,
+.copy-icon-in:hover {
+    color: #0056b3;
+    /* Cambia el color al pasar el ratón */
+}
+
+section {
+    margin: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+h3 {
+    color: #333;
+}
+
+div:not(.div-foto, .informacion, .tabs-container, .tabs),
+.certificate img {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.div-desplegable:hover {
+    background-color: #e5e5e5;
+}
+
+ul,
+.certificate img {
+    list-style-type: none;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.certificate {
+    margin-bottom: 20px;
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    /* Oculta el botón inicialmente */
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #0056b3;
+}
+
+#div-info {
+    display: block;
+}
+
+#div-info:hover{
+    background-color: #ccc;
+}
+
+.details {
+    display: none;
+}
+
+.details.show {
+    display: block;
+}
